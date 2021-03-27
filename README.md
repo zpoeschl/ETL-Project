@@ -1,52 +1,23 @@
 # ETL-Project
-This is the repo for the ETL project of UMN Data Analytics Bootcamp
+## Diversity vs. Population vs. Income
+This is the repo for the ETL project of UMN Data Analytics Bootcamp. Our final process report is contained within the Jupyter Notebook created for this project.
 
-Project goals (keep it simple)
-Get some data
-Clean it up
-Stick it in a database
+### Team members
+* Jag Singh
+* Zoe Poeschl
 
-Steps
-Find 2 data sources
-Examples:
-2 csv files
-1 csv, 1 json
-2 csv files from different sources
-Transform the data
-Load it into a database of your choice
-SQL
-MongoDB
-Write a final technical report
-** Can use markup within Jupyter Notebook to write your report within your code
-Here’s where we got our data
-Code showing loading data
-Here’s how we transformed it
-Code showing cleanup
+### Data used
+* [Unemployment data] (https://www.kaggle.com/jayrav13/unemployment-by-county-us)
+* [Diversity data] (https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
+* [Median income data] (https://data.world/tylerudite/2015-median-income-by-county/workspace/file?filename=2015+Median+Income+by+County.csv)
 
+### Data transformation
+* The county and state columns needed to be standardized across the three datasets
+* For the unemployment data, ratings needed to be averaged after grouping by County and State
+* The diversity file was the most complex to clean up. We:
+    * Removed all full state names in the location column
+    * Split the remaining data in the location column into county and state
+* We removed useless columns and rows 
 
-Proposal Requirements
-Names of team members
-The data you intend to extract
-Some idea of how you’ll transform your data
-Something about your load
-
-Team members
-Jag Singh
-Zoe Poeschl
-
-Data used
-Unemployment data
-Diversity data
-Median income data
-
-Data transformation
-County and state columns need to be standardized
-Remove useless columns and rows 
-In the unemployment data we will need to average the unemployment rate after grouping them by County and State. 
-Diversity Index file needs the following changes:
-Remove all state names 
-Split columns where county and state are combined
-
-
-Load plans
-Create tables for the 3 CSVs in a SQL database
+### Database creation
+Once the three datasets were cleaned up, data was loaded into three tables in an SQL database.
