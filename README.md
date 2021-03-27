@@ -7,9 +7,9 @@ This is the repo for the ETL project of UMN Data Analytics Bootcamp. Our final p
 * Zoe Poeschl
 
 ### Data used
-* [Unemployment data] (https://www.kaggle.com/jayrav13/unemployment-by-county-us)
-* [Diversity data] (https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
-* [Median income data] (https://data.world/tylerudite/2015-median-income-by-county/workspace/file?filename=2015+Median+Income+by+County.csv)
+* [Unemployment data](https://www.kaggle.com/jayrav13/unemployment-by-county-us)
+* [Diversity data](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
+* [Median income data](https://data.world/tylerudite/2015-median-income-by-county/workspace/file?filename=2015+Median+Income+by+County.csv)
 
 ### Data transformation
 * The county and state columns needed to be standardized across the three datasets

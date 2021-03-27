@@ -31,3 +31,7 @@ create table unemployment (
 	primary key (county, state)
 );
 
+select *
+from income
+full join unemployment
+on income.county = unemployment.county and income.state = unemployment.state;
